@@ -2,39 +2,39 @@ import React from "react";
 
 const Partner = () => {
   return (
-    <section id="form-section" className="bg-white overflow-hidden relative pb-16 lg:pb-24">
+    <section id="form-section" className="bg-white overflow-hidden relative py-20 lg:py-32">
       {/* Decorative background element for section contrast */}
-      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-[#F0F9FF] to-white -z-10"></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-[#F8FDFF] to-white -z-10"></div>
       
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* LEFT: Content */}
           <div className="flex flex-col items-start text-left">
-            <span className="uppercase tracking-[4px] text-cyan-600 text-[10px] md:text-[11px] font-semibold block mb-4">
+            <span className="uppercase tracking-[0.4em] text-[#4FB7D4] text-[10px] md:text-[11px] font-bold block mb-6">
               Partner With Us
             </span>
-            <h2 className="text-3xl lg:text-5xl leading-[1.2] font-semibold text-gray-900 mb-8 tracking-tight">
+            <h2 className="text-4xl lg:text-6xl leading-[1.1] font-extrabold text-gray-900 mb-8 tracking-tight">
               Become a <br />
               <span className="text-[#4FB7D4]">Door2fy</span> Partner
             </h2>
-            <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed mb-10 font-normal">
+            <p className="text-gray-500 text-lg md:text-xl leading-relaxed mb-12 font-medium max-w-lg">
               Join our network of elite experts and grow your business with the most trusted IT brand in the region.
             </p>
             {/* Bullet Points */}
-            <div className="space-y-6 w-full">
+            <div className="space-y-8 w-full">
               {[
                 "Get more high-quality leads and grow your business",
                 "Flexible work schedules and higher earnings",
                 "Be part of a trusted and premium partner brand",
                 "24/7 dedicated partner support and training"
               ].map((item, index) => (
-                <div key={index} className="flex items-start gap-4 group">
-                  <div className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 mt-1 rounded-full bg-cyan-500 flex items-center justify-center text-white">
-                    <svg className="w-3 md:w-3.5 h-3 md:h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div key={index} className="flex items-start gap-5 group">
+                  <div className="flex-shrink-0 w-6 h-6 md:w-7 md:h-7 mt-1 rounded-full bg-[#4FB7D4] flex items-center justify-center text-white shadow-lg shadow-[#4FB7D4]/20 group-hover:scale-110 transition-transform">
+                    <svg className="w-3.5 md:w-4 h-3.5 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <p className="text-gray-600 text-sm md:text-base lg:text-lg font-medium">{item}</p>
+                  <p className="text-gray-700 text-base md:text-lg font-bold tracking-tight">{item}</p>
                 </div>
               ))}
             </div>
@@ -43,67 +43,74 @@ const Partner = () => {
           {/* RIGHT: High Contrast Form */}
           <div className="relative">
             {/* Subtle glow behind the form */}
-            <div className="absolute -inset-4 bg-cyan-100/30 rounded-[3rem] blur-2xl -z-10"></div>
+            <div className="absolute -inset-6 bg-[#4FB7D4]/10 rounded-[3rem] blur-3xl -z-10"></div>
             
-            <form className="relative z-10 space-y-6 bg-[#EEF7FA] p-6 md:p-8 lg:p-12 rounded-[2.5rem] border border-cyan-100 shadow-[0_30px_60px_rgba(79,183,212,0.15)]">
-              <div className="mb-4">
-                <h3 className="text-xl md:text-2xl font-semibold text-center text-gray-900 mb-2">Registration Form</h3>
-                <p className="text-gray-400 text-sm text-center font-normal">Join 100+ partners across the country.</p>
+            <form className="relative z-10 space-y-7 bg-white p-8 md:p-10 lg:p-14 rounded-[3rem] border border-[#E1F7F9] shadow-[0_30px_70px_rgba(79,183,212,0.12)]">
+              <div className="mb-6">
+                <h3 className="text-2xl md:text-3xl font-extrabold text-center text-gray-900 mb-3 tracking-tight">Registration Form</h3>
+                <p className="text-gray-500 text-sm md:text-base text-center font-medium">Join 100+ partners across the country.</p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                <div className="space-y-2">
-                  <label className="text-[10px] font-semibold text-[#0F5E75] uppercase tracking-widest ml-1">Full Name</label>
+              <div className="grid md:grid-cols-2 gap-5 md:gap-7">
+                <div className="space-y-2.5">
+                  <label className="text-[10px] font-extrabold text-[#4FB7D4] uppercase tracking-widest ml-1">Full Name</label>
                   <input
                     type="text"
                     placeholder="Enter your name"
-                    className="w-full h-12 md:h-14 px-5 md:px-6 rounded-2xl bg-white border-2 border-transparent focus:border-cyan-400 text-gray-800 text-sm outline-none transition-all placeholder:text-gray-300 shadow-sm font-normal"
+                    className="w-full h-14 md:h-16 px-6 md:px-7 rounded-2xl bg-[#F8FDFF] border-2 border-transparent focus:border-[#4FB7D4] focus:bg-white text-gray-900 text-[15px] outline-none transition-all placeholder:text-gray-400 shadow-sm font-bold"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-[10px] font-semibold text-[#0F5E75] uppercase tracking-widest ml-1">Email Address</label>
+                <div className="space-y-2.5">
+                  <label className="text-[10px] font-extrabold text-[#4FB7D4] uppercase tracking-widest ml-1">Email Address</label>
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full h-12 md:h-14 px-5 md:px-6 rounded-2xl bg-white border-2 border-transparent focus:border-cyan-400 text-gray-800 text-sm outline-none transition-all placeholder:text-gray-300 shadow-sm font-normal"
+                    className="w-full h-14 md:h-16 px-6 md:px-7 rounded-2xl bg-[#F8FDFF] border-2 border-transparent focus:border-[#4FB7D4] focus:bg-white text-gray-900 text-[15px] outline-none transition-all placeholder:text-gray-400 shadow-sm font-bold"
                   />
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                <div className="space-y-2">
-                  <label className="text-[10px] font-semibold text-[#0F5E75] uppercase tracking-widest ml-1">Phone Number</label>
+              <div className="grid md:grid-cols-2 gap-5 md:gap-7">
+                <div className="space-y-2.5">
+                  <label className="text-[10px] font-extrabold text-[#4FB7D4] uppercase tracking-widest ml-1">Phone Number</label>
                   <input
                     type="text"
                     placeholder="+91 00000 00000"
-                    className="w-full h-12 md:h-14 px-5 md:px-6 rounded-2xl bg-white border-2 border-transparent focus:border-cyan-400 text-gray-800 text-sm outline-none transition-all placeholder:text-gray-300 shadow-sm font-normal"
+                    className="w-full h-14 md:h-16 px-6 md:px-7 rounded-2xl bg-[#F8FDFF] border-2 border-transparent focus:border-[#4FB7D4] focus:bg-white text-gray-900 text-[15px] outline-none transition-all placeholder:text-gray-400 shadow-sm font-bold"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-[10px] font-semibold text-[#0F5E75] uppercase tracking-widest ml-1">Service Interest</label>
-                  <select
-                    className="w-full h-12 md:h-14 px-5 md:px-6 rounded-2xl bg-white border-2 border-transparent focus:border-cyan-400 text-gray-800 text-sm outline-none appearance-none cursor-pointer shadow-sm font-normal"
-                  >
-                    <option value="">Select Category</option>
-                    <option value="macbook">MacBook Support</option>
-                    <option value="windows">Windows / Desktop</option>
-                    <option value="networking">IT Networking</option>
-                  </select>
+                <div className="space-y-2.5">
+                  <label className="text-[10px] font-extrabold text-[#4FB7D4] uppercase tracking-widest ml-1">Service Interest</label>
+                  <div className="relative">
+                    <select
+                      className="w-full h-14 md:h-16 px-6 md:px-7 rounded-2xl bg-[#F8FDFF] border-2 border-transparent focus:border-[#4FB7D4] focus:bg-white text-gray-900 text-[15px] outline-none appearance-none cursor-pointer shadow-sm font-bold"
+                    >
+                      <option value="">Select Category</option>
+                      <option value="macbook">MacBook Support</option>
+                      <option value="windows">Windows / Desktop</option>
+                      <option value="networking">IT Networking</option>
+                    </select>
+                    <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <label className="text-[10px] font-semibold text-[#0F5E75] uppercase tracking-widest ml-1">Your Message</label>
+              <div className="space-y-2.5">
+                <label className="text-[10px] font-extrabold text-[#4FB7D4] uppercase tracking-widest ml-1">Your Message</label>
                 <textarea
                   rows="3"
                   placeholder="Tell us about your background..."
-                  className="w-full px-5 md:px-6 py-4 md:py-5 rounded-2xl bg-white border-2 border-transparent focus:border-cyan-400 text-gray-800 text-sm outline-none resize-none transition-all placeholder:text-gray-300 shadow-sm font-normal"
+                  className="w-full px-6 md:px-7 py-5 md:py-6 rounded-2xl bg-[#F8FDFF] border-2 border-transparent focus:border-[#4FB7D4] focus:bg-white text-gray-900 text-[15px] outline-none resize-none transition-all placeholder:text-gray-400 shadow-sm font-bold"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full h-14 md:h-16 rounded-2xl bg-[#4FB7D4] hover:bg-[#0F5E75] text-white text-sm font-semibold uppercase tracking-widest shadow-[0_15px_30px_rgba(79,183,212,0.3)] transition-all duration-300 hover:-translate-y-1 active:scale-95"
+                className="w-full h-16 md:h-20 rounded-2xl bg-[#4FB7D4] hover:bg-[#3EA2BE] text-white text-sm md:text-base font-extrabold uppercase tracking-widest shadow-[0_15px_40px_rgba(79,183,212,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-[0.98]"
               >
                 Send Partnership Request
               </button>

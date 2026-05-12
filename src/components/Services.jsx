@@ -59,28 +59,31 @@ const Services = () => {
   ];
 
   return (
-    <section className="mb-12 md:mb-16 bg-white">
-      <div className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8 text-center">
-        <span className="text-[#4FB7D4] font-semibold uppercase tracking-[0.4em] text-[9px] md:text-[10px] mb-3 md:mb-4 block">Our Services</span>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gray-900 tracking-tight leading-tight">Complete IT Solutions for Every Need</h2>
-        <p className="text-gray-400 mb-10 md:mb-16 max-w-2xl mx-auto text-sm md:text-base font-normal leading-relaxed">From technical support to enterprise solutions, we've got you covered.</p>
-        
+    <section className="bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className=" mb-12 md:mb-20">
+          <span className="text-[#4FB7D4] font-bold   text-[14px] md:text-[15px] mb-3 md:mb-4 block">Skip the tech stress.</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl lg:text-[3.5rem] font-bold mb-4 text-gray-900 tracking-tight leading-tight">Expert tech support <br /> delivered fast</h2>
+          <p className="text-gray-500 mx-auto text-base md:text-lg font-normal leading-relaxed">Our team of verified Door2fy Professionals are always on time</p>
+        </div>
         {/* Responsive Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, i) => (
-            <div key={i} className="reveal group p-4 md:p-8 bg-[#F8FDFF] rounded-[1.5rem] md:rounded-[2rem] border border-[#E1F7F9] hover:border-[#4FB7D4] hover:bg-white transition-all duration-500 text-left flex flex-col md:flex-row items-start md:items-start space-y-4 md:space-y-0 md:space-x-6 shadow-sm hover:shadow-xl">
+            <div key={i} className="reveal group p-6 md:p-8 bg-[#F8FDFF] rounded-[2rem] border border-[#E1F7F9] hover:border-[#4FB7D4] hover:bg-white transition-all duration-500 text-left flex flex-col items-start space-y-6 shadow-sm hover:shadow-xl">
               {/* Icon Container */}
-              <div className="flex-shrink-0 w-10 h-10 md:w-14 md:h-14 bg-[#E1F7F9] rounded-xl md:rounded-2xl flex items-center justify-center text-[#4FB7D4] transition-all duration-300 group-hover:scale-110">
+              <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 bg-[#E1F7F9] rounded-2xl flex items-center justify-center text-[#4FB7D4] transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
                 {service.icon}
               </div>
               
               {/* Content Container */}
-              <div className="flex flex-col">
-                <h3 className="text-sm md:text-lg font-semibold mb-1 md:mb-2 text-gray-900 tracking-tight">{service.title}</h3>
-                <p className="text-gray-400 text-[10px] md:text-[13px] mb-4 md:mb-6 leading-relaxed font-normal line-clamp-2 md:line-clamp-none">{service.desc}</p>
-                <a href="#form-section" className="inline-flex items-center text-gray-700 font-semibold text-[9px] md:text-[13px] hover:text-[#4FB7D4] transition-colors group/link">
-                  Enquire Now <span className="ml-1 md:ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
-                </a>
+              <div className="flex flex-col flex-grow">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-gray-900 tracking-tight">{service.title}</h3>
+                <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed font-medium line-clamp-3">{service.desc}</p>
+                <div className="mt-auto">
+                  <a href="#form-section" className="inline-flex items-center text-gray-900 font-bold text-sm md:text-base hover:text-[#4FB7D4] transition-colors group/link">
+                    Enquire Now <span className="ml-2 group-hover/link:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
               </div>
             </div>
           ))}

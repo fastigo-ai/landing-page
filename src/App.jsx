@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import logo from './assets/Logo-removebg-preview.png';
-import heroTechnician from './assets/hero_technician-removebg-preview.png';
+import logo from './assets/logo.png';
+import heroTechnician from './assets/hero-section.png';
 
 import partnerHandshake from './assets/partner_handshake.png';
 
 // Component Imports
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -35,6 +36,8 @@ const App = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-blue-100 selection:text-blue-700 overflow-x-hidden">
       
+      <Navbar logo={logo} />
+
       {/* Hero Section */}
       <Hero logo={logo} heroTechnician={heroTechnician} />
 
