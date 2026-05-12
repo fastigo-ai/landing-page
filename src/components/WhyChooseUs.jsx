@@ -1,5 +1,5 @@
 import React from "react";
-import Phone from '../assets/phone1.png'
+import Phone from '../assets/phone1.PNG'
 const WhyChooseUs = () => {
   const stats = [
     {
