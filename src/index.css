@@ -1,0 +1,98 @@
+/* Modern Sans Font for Clean UI */
+@import "tailwindcss";
+
+@theme {
+  --animate-bounce-slow: bounce 3s linear infinite;
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #1F1F1F;
+  letter-spacing: -0.01em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-weight: 400;
+  color: #1F1F1F;
+  background: white;
+  line-height: 1.5;
+}
+
+p {
+  color: #666666;
+}
+
+/* Entrance Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #4FB7D4;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3EA2BE;
+}
+
+/* Marquee Animations (Testimonials) */
+@keyframes marquee-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-horizontal {
+  animation: marquee-horizontal 40s linear infinite;
+  display: flex;
+  width: fit-content;
+}
+
+.hover-pause:hover {
+  animation-play-state: paused !important;
+}
+
+@media (max-width: 768px) {
+  .animate-marquee-horizontal {
+    animation-duration: 25s;
+  }
+}
+
+/* Utility for hiding scrollbars but keeping functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
