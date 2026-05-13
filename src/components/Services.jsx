@@ -4,7 +4,7 @@ const Services = () => {
   const services = [
     { 
       title: "Macbook Support", 
-      desc: "Specialised support for macOS optimization and Apple device troubleshooting.", 
+      desc: "Specialised Support for macOS & Apple Devices. Right at Your Doorstep.", 
       icon: (
         <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h16zM4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2H4z" />
@@ -13,7 +13,7 @@ const Services = () => {
     },
     { 
       title: "Windows Support", 
-      desc: "OS installation, driver setup, updates, and performance tuning.", 
+      desc: "Complete windows solution: - installed, updated and optimized services at you Home.", 
       icon: (
         <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z" />
@@ -22,7 +22,7 @@ const Services = () => {
     },
     { 
       title: "Networking", 
-      desc: "Router configuration, WiFi optimization, and secure network setup.", 
+      desc: "Networking Setup & Support Service at Your Doorstep.", 
       icon: (
         <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071a9.5 9.5 0 0114.142 0M2.828 9.9a13.5 13.5 0 0118.344 0" />
@@ -31,7 +31,7 @@ const Services = () => {
     },
     { 
       title: "Hardware Repair", 
-      desc: "Screen replacement, keyboard fix, and internal component repairs.", 
+      desc: "Certified Hardware Repair Service Right Where You Are.", 
       icon: (
         <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
@@ -40,7 +40,7 @@ const Services = () => {
     },
     { 
       title: "Data Recovery", 
-      desc: "Safe retrieval of lost documents, photos, and critical business data.", 
+      desc: "Get Your Lost Files Back Expert Data Recovery Service at Home.", 
       icon: (
         <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
@@ -49,7 +49,7 @@ const Services = () => {
     },
     { 
       title: "IT AMC", 
-      desc: "Annual Maintenance Contracts for proactive business IT management.", 
+      desc: "Hassle-Free IT AMC Service Keep Your Systems Running All Year Long", 
       icon: (
         <svg className="w-5 h-5 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -62,9 +62,10 @@ const Services = () => {
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className=" mb-12 md:mb-20">
-          <span className="text-[#4FB7D4] font-bold   text-[14px] md:text-[15px] mb-3 md:mb-4 block">Skip the tech stress.</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl lg:text-[3.5rem] font-bold mb-4 text-gray-900 tracking-tight leading-tight">Expert tech support <br /> delivered fast</h2>
-          <p className="text-gray-500 mx-auto text-base md:text-lg font-normal leading-relaxed">Our team of verified Door2fy Professionals are always on time</p>
+          <span className="text-[#4FB7D4] font-bold   text-[14px] md:text-[15px] mb-3 md:mb-4 pl-1 block">Skip the tech stress.</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl lg:text-[4.5rem] font-bold mb-4  text-gray-900 tracking-tight leading-tight">Expert tech support <br className='-pb-4' />delivered fast </h2>
+          {/* <h2 className="text-3xl md:text-4xl lg:text-5xl lg:text-[4.5rem] font-bold mb-4  text-gray-900 tracking-tight leading-tight">Expert tech support <br className='-pb-4' /> delivered fast</h2> */}
+          <p className="text-gray-500 mx-auto text-[15px] md:text-sm font-medium leading-relaxed">Our team of verified Door2fy Professionals are always on time</p>
         </div>
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

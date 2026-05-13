@@ -2,7 +2,7 @@ import React from "react";
 
 const Partner = () => {
   return (
-    <section id="form-section" className="bg-white overflow-hidden relative py-20 lg:py-32">
+    <section id="form-section" className="bg-white overflow-hidden relative py-10 lg:py-10">
       {/* Decorative background element for section contrast */}
       <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-[#F8FDFF] to-white -z-10"></div>
       
@@ -110,7 +110,7 @@ const Partner = () => {
 
               <button
                 type="submit"
-                className="w-full h-16 md:h-20 rounded-2xl bg-[#4FB7D4] hover:bg-[#3EA2BE] text-white text-sm md:text-base font-extrabold uppercase tracking-widest shadow-[0_15px_40px_rgba(79,183,212,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-[0.98]"
+                className="w-full h-16 md:h-20 rounded-2xl bg-[#3EA2BE] hover:bg-[#3EA2BE] text-white text-sm md:text-base font-extrabold uppercase tracking-widest shadow-[0_15px_40px_rgba(79,183,212,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-[0.98]"
               >
                 Send Partnership Request
               </button>

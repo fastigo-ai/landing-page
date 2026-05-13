@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="bg-white py-16 md:py-24 overflow-hidden relative">
+    <section className="bg-white py-16 md:py-18 overflow-hidden relative">
       {/* Dynamic Floating Bubbles Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#4FB7D4]/5 rounded-full blur-3xl animate-pulse"></div>
@@ -55,18 +55,18 @@ const WhyChooseUs = () => {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         {/* Top Header Section */}
-        <div className="text-center mb-16 md:mb-20">
-          <span className="text-[#4FB7D4] uppercase tracking-[0.4em] text-[10px] md:text-[11px] font-bold mb-4 block">
+        <div className="mb-16 md:mb-20">
+          <span className="text-[#4FB7D4] pl-1 uppercase tracking-[0.4em] text-[10px] md:text-[11px] font-bold mb-4 block">
             Why Choose Door2fy
           </span>
-          <h2 className="text-gray-900 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight max-w-3xl mx-auto">
-            Trusted by Hundreds of Businesses for Seamless IT Support
+          <h2 className="text-gray-900 text-3xl md:text-4xl lg:text-5xl lg:text-[4.5rem] font-bold leading-tight tracking-tight  mx-auto">
+            Built for Businesses <br /> That Can’t Afford<br /> Downtime
           </h2>
-          <div className="h-1.5 w-20 bg-[#4FB7D4] rounded-full mx-auto mt-8"></div>
+          {/* <div className="h-1.5 w-20 bg-[#4FB7D4] rounded-full mx-auto mt-4"></div> */}
         </div>
 
         {/* 3D Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-20 lg:mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12 lg:mb-14">
           {stats.map((item, index) => (
             <div
               key={index}

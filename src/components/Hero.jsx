@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = ({ logo, heroTechnician }) => {
   return (
-    <section className="w-full -mt-4 bg-white overflow-hidden relative min-h-[600px] flex flex-col">
+    <section className="w-full  bg-white overflow-hidden relative min-h-[600px] flex flex-col">
       {/* Background Shapes */}
       <div className="absolute top-[-10%] right-[-10%] w-[60%] aspect-square bg-[#F0FBFF] rounded-full -z-10 blur-3xl opacity-50"></div>
       <div className="absolute bottom-[10%] left-[-5%] w-[40%] aspect-square bg-[#E8F8FB] rounded-full -z-10 blur-3xl opacity-30"></div>
@@ -12,8 +12,7 @@ const Hero = ({ logo, heroTechnician }) => {
       <div className="absolute -bottom-24 -left-24 w-[500px] h-[500px] bg-[#4FB7D4]/10 rounded-full -z-10 blur-[120px]"></div>
       <div className="absolute -bottom-24 -right-24 w-[500px] h-[500px] bg-blue-400/10 rounded-full -z-10 blur-[120px]"></div>
       {/* Top Header Row - Full Width Border */}
-
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full flex flex-col flex-grow pt-8 lg:pt-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full flex flex-col flex-grow pt-10 lg:pt-24">
         {/* Main Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-8 flex-grow pb-16 lg:pb-12">
           {/* Left Content */}
